@@ -314,5 +314,54 @@
     value="{{currentDate}}"
     filter="{{filter}}"
   ></van-datetime-picker> -->
+
+  <!-- <van-cell-group>
+    <van-field
+      value="{{value}}"
+      placeholder="请输入用户名"
+      border="{{false}}"
+      bind:change="onChange"
+    ></van-field>
+  </van-cell-group> -->
+
+  <!-- <van-cell-group>
+    <van-field
+      model:value="{{value}}"
+      placeholder="请输入用户名"
+      border="{{false}}"
+      bind:change="onChange"
+    ></van-field>
+  </van-cell-group> -->
+  
+  <!-- <van-cell-group>
+    <van-field
+      value="{{username}}"
+      required
+      clearable
+      label="用户名"
+      icon="question-o"
+      placeholder="请输入用户名"
+      bind:click-icon="onClickIcon"
+    ></van-field>
+
+    <van-field
+      value="{{password}}"
+      type="password"
+      label="密码"
+      placeholder="请输入密码"
+      required
+      border="{{false}}"
+    ></van-field>
+  </van-cell-group> -->
+
+  <van-cell-group>
+    <van-field
+      value="输入框已禁用"
+      label="用户名"
+      left-icon="contact"
+      disabled
+      border="{{false}}"
+    ></van-field>
+  </van-cell-group>
   
 </view>

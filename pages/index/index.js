@@ -305,3 +305,22 @@ const app = getApp();
 //     });
 //   },
 // });
+
+// Page({
+//   data: {
+//     value: ''
+//   },
+//   onChange(event) {
+//     console.log(this.data.value);
+//   }
+// })
+
+Page({
+  data: {
+    username: '',
+    password: '',
+  },
+  onClickIcon(event) {
+    console.log(event);
+  }
+});
