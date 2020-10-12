@@ -1,0 +1,48 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+/* .van-col:nth-child(odd) {
+  background-color: #39a9ed;
+}
+
+.van-col:nth-child(even) {
+  background-color: #66c6f2;
+} */
+
+/* .van-enter-active-class,
+.van-leave-active-class {
+  transition-property: background, transform;
+}
+
+.van-enter-class,
+.van-leave-to-class {
+  background-color: red;
+  transform: rotate(-360deg) translate3d(-100%, -100%, 0);
+} */
+
+/* .calendar {
+  --calendar-height: 500px
+} */
+
+.value-class {
+  flex: none !important;
+}

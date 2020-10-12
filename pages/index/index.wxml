@@ -1,0 +1,318 @@
+<!-- index.wxml -->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!-- <view>
+  <van-button type="default">默认按钮</van-button>
+  <van-button type="primary">主要按钮</van-button>
+  <van-button type="info">信息按钮</van-button>
+  <van-button type="warning">警告按钮</van-button>
+  <van-button type="danger">危险按钮</van-button>
+  <view></view>
+  <van-button type="primary" plain>朴素按钮</van-button>
+  <van-button type="info" plain>朴素按钮</van-button>
+  <view></view>
+  <van-button plain type="primary">细边框按钮</van-button>
+  <view></view>
+  <van-button disabled type="primary">禁用状态</van-button>
+  <van-button disabled type="info">禁用状态</van-button>
+  <view></view>
+  <van-button loading type="primary"></van-button>
+  <van-button loading type="primary" loading-type="spinner"></van-button>
+  <van-button loading type="primary" loading-text="加载中..."></van-button>
+  <view></view>
+  <van-button square type="primary">方形按钮</van-button>
+  <van-button round type="info">圆形按钮</van-button>
+  <view></view>
+  <van-button icon="star-o" type="primary"></van-button>
+  <van-button icon="star-o" type="primary">按钮</van-button>
+  <van-button icon="https://img.yzcdn.cn/vant/logo.png" type="primary">按钮</van-button>
+  <van-button type="primary" size="large">大号按钮</van-button>
+  <van-button type="primary" size="normal">普通按钮</van-button>
+  <van-button type="primary" size="small">小型按钮</van-button>
+  <van-button type="primary" size="mini">迷你按钮</van-button>
+  <van-button type="primary" block>块级按钮</van-button>
+  <van-button color="#7232dd">单色按钮</van-button>
+  <van-button color="#7232dd" plain>单色按钮</van-button>
+  <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)">渐变色按钮</van-button>
+</view> -->
+<!-- <view> -->
+<!-- <van-cell-group>
+    <van-cell title="单元格" value="内容"></van-cell>
+    <van-cell title="单元格" value="内容" label="描述信息" border="{{ false }}"></van-cell>
+  </van-cell-group> -->
+<!-- <van-cell title="单元格" value="内容" size="large"></van-cell>
+  <van-cell title="单元格" value="内容" size="large" label="描述信息"></van-cell> -->
+<!-- <van-cell title="单元格" icon="location-o" value="内容" label="描述信息"></van-cell> -->
+<!-- <van-cell title="单元格" is-link></van-cell>
+  <van-cell title="单元格" is-link value="内容"></van-cell>
+  <van-cell title="单元格" is-link value="内容"></van-cell> -->
+<!-- <van-cell is-link title="单元格" link-type="navigateTo" url="/pages/dashboard/index"></van-cell> -->
+<!-- <van-cell value="内容" is-link>
+    <view slot="title">
+      <view class="van-cell-text">单元格</view>
+      <van-tag type="danger">标签</van-tag>
+    </view>
+  </van-cell>
+  <van-cell title="单元格" icon="shop-o">
+    <van-icon slot="right-icon" name="search" class="custom-icon"></van-icon>
+  </van-cell> -->
+<!-- <van-cell center title="单元格" value="内容" label="描述信息"></van-cell> -->
+<!-- </view> -->
+<!-- <view>
+  <van-icon name="close"></van-icon>
+  <van-icon name="https://b.yzcdn.cn/vant/icon-demo-1126.png"></van-icon>
+  <van-icon name="chat" dot size="40px"></van-icon>
+  <van-icon name="chat" info="9" size="40px"></van-icon>
+  <van-icon name="chat" info="99+"></van-icon>
+  <van-icon name="chat" color="red"></van-icon>
+
+  <van-icon name="chat" size="50px"></van-icon>
+</view> -->
+<!-- <view> -->
+<!-- <van-image width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image> -->
+<!-- <van-image width="10rem" height="10rem" fit="scale-down" src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image> -->
+<!-- <van-image round fit="contain" width="10rem" height="10rem" src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image>
+  <van-image round fit="cover" width="10rem" height="10rem" src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image>
+  <van-image round fit="fill" width="10rem" height="10rem" src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image>
+  <van-image round fit="none" width="10rem" height="10rem" src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image>
+  <van-image round fit="scale-down" width="10rem" height="10rem" src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image> -->
+<!-- <van-image width="100" height="100" lazy-load src="https://img.yzcdn.cn/vant/cat.jpeg"></van-image> -->
+<!-- <van-image use-loading-slot>
+    <van-loading slot="loading" type="spinner" size="20" vertical></van-loading>
+  </van-image> -->
+<!-- <van-image use-error-slot>
+    <text slot="error">加载失败</text>
+  </van-image>
+</view> -->
+<!-- <view>
+  <van-row>
+    <van-col span="8" style="background: red">span: 8</van-col>
+    <van-col span="8" style="background: green" class="my">span: 8</van-col>
+    <van-col span="8" style="background: blue">span: 8</van-col>
+  </van-row>
+
+  <van-row>
+    <van-col span="4">span: 4</van-col>
+    <van-col span="10" offset="4">offset: 4, span: 12</van-col>
+  </van-row>
+
+  <van-row>
+    <van-col offset="12" span="12">offset: 12, span: 12</van-col>
+  </van-row>
+
+  <van-row gutter="8">
+    <van-col span="8">span: 8;</van-col>
+    <van-col span="8">span: 8;</van-col>
+    <van-col span="8">span: 8;</van-col>
+  </van-row>
+</view> -->
+<!-- <view> -->
+<!-- <van-cell title="展示弹出层" is-link bind:click="showPopup"></van-cell> -->
+<!-- <van-popup show="{{show}}" bind:close="onClose" position="bottom" custom-style="height: 20%">内容</van-popup> -->
+<!-- <van-popup show="{{show}}" closeable position="bottom" custom-style="height: 20%" bind:close="onClose"></van-popup> -->
+<!-- <van-popup show="{{show}}" closeable close-icon="close" position="bottom" custom-style="height: 20%" bind:close="onClose"></van-popup> -->
+<!-- <van-popup show="{{show}}" closeable close-icon-position="top-left" position="bottom" custom-style="height:20%" bind:close="onClose"></van-popup> -->
+<!-- <van-popup show="{{show}}" round position="bottom" custom-style="height: 20%" bind:close="onClose"></van-popup> -->
+<!-- </view> -->
+<!-- <view>
+  <van-cell title="展示弹出层" is-link bind:click="showPopup"></van-cell>
+  <van-transition show="{{show}}" name="fade-up">内容</van-transition>
+  <van-transition 
+    show="{{show}}"
+    name=""
+    duration="{{ {enter: 300, leave: 1000} }}"
+    enter-class="van-enter-class"
+    enter-active-class="van-enter-active-class"
+    leave-active-class="van-leave-active-class"
+    leave-to-class="van-leave-to-class"
+  ></van-transition>
+</view> -->
+<!-- <view> -->
+  <!-- <van-cell 
+    title="选择单个日期" 
+    value="{{date}}" 
+    bind:click="onDisplay"
+  ></van-cell>
+  <van-calendar 
+    show="{{show}}" 
+    bind:close="onClose" 
+    bind:confirm="onConfirm"
+  ></van-calendar> -->
+  <!-- <van-cell
+    title="选择多个日期"
+    value="{{text}}"
+    bind:click="onDisplay"
+  ></van-cell>
+  <van-calendar
+    show="{{show}}"
+    type="multiple"
+    bind:close="onClose"
+    bind:confirm="onConfirm"
+  ></van-calendar> -->
+  <!-- <van-cell
+    title="选择日期区间"
+    value="{{date}}"
+    bind:click="onDisplay"
+  ></van-cell> -->
+
+  <!-- <van-calendar
+    show="{{show}}"
+    type="range"
+    bind:close="onClose"
+    bind:confirm="onConfirm"
+    color="#07c160"
+    min-date="{{minDate}}"
+    max-date="{{maxDate}}"
+    confirm-text="完成"
+    confirm-disabled-text="请选择结束时间"
+  ></van-calendar> -->
+
+  <!-- <van-calendar
+    show="{{show}}"
+    type="range"
+    formatter="{{formatter}}"
+  ></van-calendar> -->
+  
+  <!-- <van-calendar
+    show="{{show}}"
+    round="false"
+    position="bottom"
+    bind:close="onClose"
+  ></van-calendar> -->
+
+  <!-- <van-calendar
+    show="{{show}}"
+    type="range"
+    max-range="{{3}}"
+  ></van-calendar> -->
+  
+  <!-- <van-calendar
+    title="日历"
+    poppable="{{false}}"
+    show-confirm="{{false}}"
+    class="calendar"
+  ></van-calendar> -->
+
+<!-- </view> -->
+
+<view>
+  <!-- <van-checkbox
+    value="{{checked}}"
+    bind:change="onChange"
+    disabled
+  >复选框</van-checkbox> -->
+
+  <!-- <van-checkbox
+    value="{{checked}}"
+    shape="square"
+    bind:change="onChange"
+  >复选框</van-checkbox> -->
+  
+  <!-- <van-checkbox
+    value="{{checked}}"
+    checked-color="#07c160"
+    bind:change="onChange"
+  >复选框</van-checkbox> -->
+
+  <!-- <van-checkbox
+    value="{{checked}}"
+    icon-size="25px"
+    bind:change="onChange"
+  >复选框</van-checkbox> -->
+
+  <!-- <van-checkbox use-icon-slot value="{{ checked }}" bind:change="onChange">
+  自定义图标
+  <image slot="icon" src="{{ checked ? activeIcon : inactiveIcon }}" />
+</van-checkbox> -->
+
+  <!-- <van-checkbox
+    value="{{checked}}"
+    label-disabled
+    bind:change="onChange"
+  >复选框</van-checkbox> -->
+  <!-- <van-checkbox-group
+    value="{{result}}"
+    bind:change="onChange">
+    <van-checkbox name="a">复选框a</van-checkbox>
+    <van-checkbox name="b">复选框b</van-checkbox>
+    <van-checkbox name="c">复选框c</van-checkbox>
+  </van-checkbox-group> -->
+  
+  <!-- <van-checkbox-group
+    value="{{result}}"
+    bind:change="onChange"
+    max="{{2}}">
+    <van-checkbox name="a">复选框 a</van-checkbox>
+    <van-checkbox name="b">复选框 b</van-checkbox>
+    <van-checkbox name="c">复选框 c</van-checkbox>
+  </van-checkbox-group> -->
+
+  <!-- <van-checkbox-group
+    value="{{result}}"
+    bind:change="onChange">
+    <van-cell-group>
+      <van-cell
+        wx:for="{{list}}"
+        wx:key="index"
+        title="复选框 {{item}}"
+        value-class="value-class"
+        clickable
+        data-index="{{index}}"
+        bind:click="toggle">
+        <van-checkbox
+          catch:tap="noop"
+          class="checkboxes-{{index}}"
+          name="{{item}}"
+        ></van-checkbox>
+      </van-cell>
+    </van-cell-group>
+  </van-checkbox-group> -->
+  
+  <!-- <van-datetime-picker
+    type="datetime"
+    value="{{ currentDate }}"
+    min-date="{{ minDate }}"
+    max-date="{{ maxDate }}"
+    bind:input="onInput"
+  /> -->
+
+  <!-- <van-datetime-picker
+    type="date"
+    value="{{currentDate}}"
+    bind:input="onInput"
+    min-date="{{minDate}}"
+    formatter="{{formatter}}"
+  ></van-datetime-picker> -->
+  
+  <!-- <van-datetime-picker
+    type="year-month"
+    value="{{currentDate}}"
+    min-date="{minDate}"
+    bind:input="onInput"
+  ></van-datetime-picker> -->
+
+  <!-- <van-datetime-picker
+    type="time"
+    value="{{currentDate}}"
+    min-hour="{{minHour}}"
+    max-hour="{{maxHour}}"
+    bind:input="onInput"
+  ></van-datetime-picker> -->
+
+  <!-- <van-datetime-picker
+    type="time"
+    value="{{currentDate}}"
+    filter="{{filter}}"
+  ></van-datetime-picker> -->
+  
+</view>
