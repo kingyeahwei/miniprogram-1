@@ -1,5 +1,6 @@
 //index.js
 //获取应用实例
+// import Toast from '@vant/weapp/toast/toast';
 const app = getApp();
 
 /* Page({
@@ -315,12 +316,80 @@ const app = getApp();
 //   }
 // })
 
-Page({
-  data: {
-    username: '',
-    password: '',
-  },
-  onClickIcon(event) {
-    console.log(event);
-  }
-});
+// Page({
+//   data: {
+//     username: '',
+//     phone: '',
+//   },
+//   onClickIcon(event) {
+//     console.log(event);
+//   }
+// });
+
+// Page({
+//   data: {
+//     columns: ['杭州', '宁波', '温州', '嘉兴', '湖州']
+//   },
+//   onConfirm(event) {
+//     const {picker, value, index} = event.detail;
+//     Toast(`当前值: ${value}, 当前索引: ${index}`)
+//   },
+//   onCancel() {
+//     Toast("取消");
+//   }
+// })
+
+// const citys = {
+//   浙江: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
+//   福建: ['福州', '厦门', '莆田', '三明', '泉州'],
+// };
+
+// Page({
+//   data: {
+//     columns: [
+//       {
+//         values: Object.keys(citys),
+//         className: 'column1',
+//       },
+//       {
+//         values: citys['浙江'],
+//         className: 'column2',
+//         defaultIndex: 2,
+//       },
+//     ],
+//   },
+//   onChange(event) {
+//     const { picker, value, index } = event.detail;
+//     console.log(event.detail);
+//     picker.setColumnValues(1, citys[value[0]]);
+//   },
+// });
+
+// Page({
+//   data: {
+//     columns: [
+//       {text: '杭州', disabled: true},
+//       {text: '宁波'},
+//       {text: '温州'},
+//     ]
+//   }
+// })
+
+// Page({
+//   data: {
+//     radio: '1',
+//   },
+//   onChange(event) {
+//     console.log('1111');
+//     this.setData({
+//       radio: event.detail,
+//     });
+//   },
+//   onClick(event) {
+//     console.log(event);
+//     const {name} = event.currentTarget.dataset;
+//     this.setData({
+//       radio: name
+//     })
+//   }
+// });
