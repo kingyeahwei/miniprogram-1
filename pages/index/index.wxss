@@ -43,6 +43,12 @@
   --calendar-height: 500px
 } */
 
-.value-class {
+/* .value-class {
   flex: none !important;
-}
+} */
+
+/* .custom-button {
+  background-color: red;
+  font-size: 14px;
+  border-radius: 100px;
+} */

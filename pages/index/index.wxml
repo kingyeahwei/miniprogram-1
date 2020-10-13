@@ -472,4 +472,241 @@
       </van-cell>
     </van-cell-group>
   </van-radio-group> -->
+
+  <!-- <van-rate value="{{value}}" bind:change="onChange"></van-rate> -->
+
+  <!-- <van-rate
+    value="{{value}}"
+    icon="like"
+    void-icon="like-o"
+    bind:change="onChange"
+  ></van-rate> -->
+
+  <!-- <van-rate
+    value="{{value}}"
+    size="{{25}}"
+    color="green"
+    void-color="yellow"
+    icon="like"
+    void-icon="like"
+    bind:change="onChange"
+  ></van-rate> -->
+
+  <!-- <van-rate
+    value="{{value}}"
+    size="{{25}}"
+    allow-half
+    color="#ee0a24"
+    void-color="#eee"
+    bind:change="onChange"
+  ></van-rate> -->
+  
+  <!-- <van-rate value="{{value}}" count="{{6}}" bind:change="onChange"></van-rate> -->
+
+  <!-- <van-rate disabled value="{{value}}" bind:change="onChange"></van-rate> -->
+
+  <!-- <van-rate readonly value="{{value}}" bind:change="onChange"></van-rate> -->
+
+  <!-- <van-search value="{{value}}" placeholder="请输入搜索关键词"></van-search> -->
+
+  <!-- <van-search
+    value="{{value}}"
+    placeholder="请输入搜索关键字"
+    show-action
+    bind:search="onSearch"
+    bind:cancel="onCancel"
+  ></van-search> -->
+
+  <!-- <van-search
+    value="{{value}}"
+    input-align="center"
+    placeholder="请输入搜索关键词"
+  ></van-search> -->
+
+  <!-- <van-search
+    disabled
+    value="{{value}}"
+    placeholder="请输入搜索关键字"
+  ></van-search> -->
+
+  <!-- <van-search
+    value="{{value}}"
+    shape="round"
+    background="#4fc08d"
+    show-action
+    placeholder="请输入搜索关键词"
+  ></van-search> -->
+
+  <!-- <van-search
+    value="{{value}}"
+    label="地址"
+    placeholder="请输入搜索关键词"
+    use-action-slot
+    bind:change="onChange"
+    bind:search="onSearch">
+    <view slot="action" bind:tap="onClick">搜索</view>  
+  </van-search> -->
+
+  <!-- <van-slider value="50" bind:change="onChange"></van-slider>   -->
+
+  <!-- <van-slider min="-50" max="50" value="20" bind:change="onChange"></van-slider> -->
+
+  <!-- <van-slider value="50" disabled></van-slider> -->
+
+  <!-- <van-slider value="50" step="10"></van-slider> -->
+
+  <!-- <van-slider value="50" bar-height="4px" active-color="#ee0a24"></van-slider> -->
+
+  <!-- <van-slider
+    value="{{currentValue}}"
+    use-button-slot
+    bind:drag="onDrag"
+  >
+    <view class="custom-button" slot="button">
+      {{currentValue}}/100
+    </view>
+  </van-slider> -->
+
+  <!-- <van-stepper
+    value="{{1}}"
+    bind:change="onChange"
+    step="2"
+  ></van-stepper> -->
+
+  <!-- <van-stepper value="{{5}}" min="5" max="8"></van-stepper> -->
+
+  <!-- <van-stepper value="{{1}}" integer></van-stepper> -->
+
+  <!-- <van-stepper value="{{1}}" disabled></van-stepper> -->
+
+  <!-- <van-stepper value="{{1}}" long-press="{{false}}"></van-stepper> -->
+
+  <!-- <van-stepper value="{{1}}" step="0.2" decimal-length="{{1}}"></van-stepper> -->
+
+  <!-- <van-stepper value="{{value}}" async-change bind:change="onChange"></van-stepper> -->
+
+  <!-- <van-switch checked="{{checked}}" bind:change="onChange"></van-switch> -->
+
+  <!-- <van-switch checked="{{checked}}" disabled></van-switch> -->
+
+  <!-- <van-switch checked="{{checked}}" loading bind:change="onChange"></van-switch> -->
+
+  <!-- <van-switch checked="{{checked}}" size="24px" bind:change="onChange"></van-switch> -->
+
+  <!-- <van-switch checked="{{checked}}" active-color="#07c160" inactive-color="#ee0a24" bind:change="onChange"></van-switch> -->
+
+  <!-- <van-switch checked="{{checked}}" bind:change="onChange"></van-switch> -->
+
+  <!-- <van-button bind:click="btnClick">点击</van-button> -->
+
+  <!-- <van-action-sheet
+    show="{{show}}"
+    actions="{{actions}}"
+    bind:close="onClose"
+    bind:select="onSelect"
+  ></van-action-sheet> -->
+
+  <!-- <van-action-sheet
+    show="{{show}}"
+    actions="{{actions}}"
+    cancel-text="算了"
+  ></van-action-sheet> -->
+
+  <!-- <van-action-sheet
+    show="{{show}}"
+    actions="{{actions}}"
+    description="这是一段描述信息"
+  ></van-action-sheet> -->
+
+  <!-- <van-action-sheet
+    show="{{show}}"
+    title="标题">
+    <view>内容</view>
+  </van-action-sheet> -->
+
+  <!-- <van-action-sheet
+    show="{{show}}"
+    actions="{{actions}}"
+    bind:close="onClose"
+    bind:getuserinfo="onGetUserInfo"
+  ></van-action-sheet> -->
+
+  <!-- <van-button bind:click="btnClick">点击</van-button>
+
+  <van-dialog
+    id="van-dialog"
+  ></van-dialog>
+   -->
+
+   <!-- <van-dialog
+    use-slot
+    title="标题"
+    show="{{show}}"
+    show-cancel-button
+    confirm-button-open-type="getUserInfo"
+    bind:close="onClose"
+    bind:getuserinfo="getUserInfo">
+    <image src="https://img.yzcdn.cn/vant/apple-3.jpg" />
+    
+  </van-dialog> -->
+   
+  <!-- <van-dropdown-menu>
+    <van-dropdown-item value="{{value1}}" options="{{option1}}"></van-dropdown-item>
+    <van-dropdown-item value="{{value2}}" options="{{option2}}"></van-dropdown-item>
+  </van-dropdown-menu> -->
+
+  <!-- <van-dropdown-menu>
+    <van-dropdown-item value="{{value1}}" options="{{option1}}"></van-dropdown-item>
+    <van-dropdown-item id="item" title="{{itemTitle}}">
+      <van-cell title="{{switchTitle1}}">
+        <van-switch
+          slot="right-icon"
+          size="24px"
+          style="height: 26px"
+          checked="{{switch1}}"
+          bind:change="onSwitch1Change"
+        ></van-switch>
+      </van-cell>
+      <van-cell title="{{switchTitle2}}">
+        <van-switch
+          slot="right-icon"
+          size="24px"
+          style="height: 26px"
+          checked="{{switch2}}"
+          bind:change="onSwitch2Change"
+        ></van-switch>
+      </van-cell>
+      <van-button type="info" block bind:click="onConfirm">确定</van-button>
+    </van-dropdown-item>
+
+  </van-dropdown-menu> -->
+
+  <!-- <van-dropdown-menu active-color="#ee0a24">
+    <van-dropdown-item value="{{value1}}" options="{{option1}}"></van-dropdown-item>
+    <van-dropdown-item value="{{value2}}" options="{{option2}}"></van-dropdown-item>
+  </van-dropdown-menu> -->
+
+  <!-- <van-dropdown-menu direction="up">
+    <van-dropdown-item value="{{value1}}" options="{{option1}}"></van-dropdown-item>
+    <van-dropdown-item value="{{value2}}" options="{{option2}}"></van-dropdown-item>
+  </van-dropdown-menu> -->
+
+  <!-- <van-dropdown-menu>
+    <van-dropdown-item value="{{value1}}" disabled options="{{option1}}"></van-dropdown-item>
+    <van-dropdown-item value="{{value2}}" disabled options="{{option2}}"></van-dropdown-item>
+  </van-dropdown-menu> -->
+
+  <!-- <van-loading></van-loading>
+  <van-loading type="spinner"></van-loading> -->
+
+  <!-- <van-loading color="#1989fa"></van-loading>
+  <van-loading type="spinner" color="#1989fa"></van-loading> -->
+
+  <!-- <van-loading size="24px">加载中</van-loading> -->
+
+  <!-- <van-loading size="24px" vertical>加载中</van-loading> -->
+
+  <van-button bind:click="btnClick">点击</van-button>
+  <!-- <van-notify id="van-notify"></van-notify> -->
+  <van-notify id="custom-selector"></van-notify>
 </view>

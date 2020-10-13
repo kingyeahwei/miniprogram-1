@@ -1,6 +1,9 @@
 //index.js
 //获取应用实例
 // import Toast from '@vant/weapp/toast/toast';
+
+// import Dialog from '@vant/weapp/dialog/dialog';
+import Notify from '@vant/weapp/notify/notify'
 const app = getApp();
 
 /* Page({
@@ -393,3 +396,231 @@ const app = getApp();
 //     })
 //   }
 // });
+
+// Page({
+//   data: {
+//     value: '',
+//   },
+//   onChange(event) {
+//     this.setData({
+//       value: event.detail,
+//     });
+//   },
+//   onSearch() {
+//     console.log('搜索' + this.data.value);
+//   },
+//   onClick() {
+//     console.log('搜索' + this.data.value);
+//   }
+// });
+
+// Page({
+//   onChange(event) {
+//     wx.showToast({
+//       icon: "none",
+//       title: `当前值: ${event.detail}`
+//     })
+//   }
+// })
+
+// Page({
+//   data: {
+//     currentValue: 50,
+//   },
+//   onDrag(event) {
+//     this.setData({
+//       currentValue: event.detail.value,
+//     });
+//   },
+// });
+
+// Page({
+//   onChange(event) {
+//     console.log(event.detail);
+//   }
+// })
+
+// Page({
+//   data: {
+//     value: 1,
+//   },
+//   onChange(value) {
+//     setTimeout(() => {
+//       this.setData({
+//         value:value.detail
+//       })
+//     }, 500);
+//   }
+// })
+
+// Page({
+//   data: {
+//     checked: true
+//   },
+//   onChange({detail}) {
+//     this.setData({
+//       checked: detail
+//     })
+//   }
+// })
+
+// Page({
+//   data: {
+//     checked: true,
+//   },
+//   onChange({ detail }) {
+//     wx.showModal({
+//       title: '提示',
+//       content: '是否开启开关?',
+//       success: (res) => {
+//         if (res.confirm) {
+//           this.setData({ checked: detail });
+//         }
+//       },
+//     });
+//   },
+// });
+
+// Page({
+//   data: {
+//     show: false,
+//     actions: [
+//       { name: '选项', color: '#07c160', subname: '描述' },
+//       { loading: true },
+//       { name: '禁用选项', disabled: true },
+//     ],
+//   },
+//   btnClick() {
+//     this.setData({
+//       show: !this.data.show
+//     })
+//   }
+// });
+
+// Page({
+//   data: {
+//     show: false,
+//     actions: [
+//       { name: '获取用户信息', color: '#07c160', openType: 'getUserInfo' },
+//     ],
+//   },
+//   onClose() {
+//     console.log('close');
+//     this.setData({
+//       show: false,
+//     });
+//   },
+//   onGetUserInfo(e) {
+//     console.log(e.detail);
+//   },
+//   btnClick() {
+//     this.setData({
+//       show: !this.data.show
+//     })
+//   }
+// });
+
+// Page({
+//   data: {},
+//   btnClick() {
+//     // Dialog({
+//     //   title: "标题",
+//     //   message: "弹窗内容",
+//     //   theme: "round-button"
+//     // }).then(() => {
+//     //   console.log('成功');
+//     // })
+
+//     Dialog.confirm({
+//       title: "标题",
+//       message: "弹窗内容",
+//       asyncClose: true
+//     }).then(() => {
+//       setTimeout(() => {
+//         Dialog.close()
+//       }, 1000);
+//     }).catch(() => {
+//       Dialog.close()
+//     })
+//   }
+// })
+
+// Page({
+//   data: {
+//     show: true,
+//   },
+//   getUserInfo(event) {
+//     console.log(event.detail);
+//   },
+//   onClose() {
+//     console.log('close');
+//     this.setData({ close: false });
+//   },
+// });
+
+// Page({
+//   data: {
+//     option1: [
+//       { text: '全部商品', value: 0 },
+//       { text: '新款商品', value: 1 },
+//       { text: '活动商品', value: 2 },
+//     ],
+//     option2: [
+//       { text: '默认好评', value: 'a' },
+//       { text: '好评排序', value: 'b' },
+//       { text: '销量排序', value: 'c' },
+//     ],
+//     value1: 0,
+//     value2: 'a',
+//   },
+// });
+
+// Page({
+//   data: {
+//     switchTitle1: '包邮',
+//     switchTitle2: '团购',
+//     itemTitle: '筛选',
+//     option1: [
+//       {text: '全部商品', value: 0},
+//       {text: '新款商品', value: 1},
+//       {text: '活动商品', value: 2},
+//     ],
+//     value1: 0
+//   },
+//   onConfirm() {
+//     this.selectComponent('#item').toggle()
+//   },
+//   onSwitch1Change({detail}) {
+//     this.setData({
+//       switch1: detail
+//     })
+//   },
+//   onSwitch2Change({detail}) {
+//     this.setData({
+//       switch2: detail
+//     })
+//   }
+// })
+
+Page({
+  data: {},
+  btnClick() {
+    // Notify('通知内容')
+    // Notify({type: "primary", message: '通知内容'})
+    // Notify({type: "success", message: '通知内容'})
+    // Notify({type: "danger", message: '通知内容'})
+    // Notify({type: "warning", message: '通知内容'})
+
+    // Notify({
+    //   message: '自定义颜色',
+    //   color: '#ad0000',
+    //   background: '#ffe1e1'
+    // })
+
+    Notify({
+      message: '自定义节点选择器',
+      duration: 1000,
+      selector: '#custom-selector'
+    })
+  }
+})
