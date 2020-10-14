@@ -42,6 +42,10 @@
     "van-divider": "@vant/weapp/divider/index",
     "van-empty": "@vant/weapp/empty/index",
     "van-notice-bar": "@vant/weapp/notice-bar/index",
-    "van-panel": "@vant/weapp/panel/index"
+    "van-panel": "@vant/weapp/panel/index",
+    "van-progress": "@vant/weapp/progress/index",
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-steps": "@vant/weapp/steps/index",
+    "van-sticky": "@vant/weapp/sticky/index"
   }
 }

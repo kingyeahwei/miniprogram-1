@@ -730,44 +730,44 @@ const app = getApp();
 // });
 
 // Page({
-  // onClick() {
-    // Toast("我是提示文案,建议不超过十五字~")
-    // Toast.loading({
-    //   message: '加载中...',
-    //   forbidClick: true,
-    //   loadingType: 'spinner'
-    // })
-    // Toast.success("成功文案")
-    // Toast.fail('失败文案')
-    // const toast = Toast.loading({
-    //   duration: 0,
-    //   forbidClick: true,
-    //   message: '倒计时3秒',
-    //   selector: '#custom-selector',
-    // });
+// onClick() {
+// Toast("我是提示文案,建议不超过十五字~")
+// Toast.loading({
+//   message: '加载中...',
+//   forbidClick: true,
+//   loadingType: 'spinner'
+// })
+// Toast.success("成功文案")
+// Toast.fail('失败文案')
+// const toast = Toast.loading({
+//   duration: 0,
+//   forbidClick: true,
+//   message: '倒计时3秒',
+//   selector: '#custom-selector',
+// });
 
-    // let second = 3;
-    // const timer = setInterval(() => {
-    //   second--;
-    //   if (second) {
-    //     toast.setData({
-    //       message: `倒计时${second}秒`,
-    //     });
-    //   } else {
-    //     clearInterval(timer);
-    //     Toast.clear()
-    //   }
-    // }, 1000);
+// let second = 3;
+// const timer = setInterval(() => {
+//   second--;
+//   if (second) {
+//     toast.setData({
+//       message: `倒计时${second}秒`,
+//     });
+//   } else {
+//     clearInterval(timer);
+//     Toast.clear()
+//   }
+// }, 1000);
 
-  //   Toast({
-  //     type: 'success',
-  //     message: '提交成功',
-  //     onClose() {
-  //       console.log('执行回调函数');
-  //     }
-  //   })
-    
-  // },
+//   Toast({
+//     type: 'success',
+//     message: '提交成功',
+//     onClose() {
+//       console.log('执行回调函数');
+//     }
+//   })
+
+// },
 // });
 
 // Page({
@@ -820,20 +820,75 @@ const app = getApp();
 //   },
 // });
 
+// Page({
+//   start() {
+//     const countDown = this.selectComponent(".control-count-down");
+//     countDown.start()
+//   },
+//   pause() {
+//     const countDown = this.selectComponent('.control-count-down');
+//     countDown.pause()
+//   },
+//   reset() {
+//     const countDown = this.selectComponent('.control-count-down');
+//     countDown.reset()
+//   },
+//   finished() {
+//     Toast("倒计时结束")
+//   }
+// })
+
+// Page({
+//   data: {
+//     loading: true
+//   },
+//   onReady() {
+//     this.setData({
+//       loading: true
+//     })
+//   }
+// })
+
+// Page({
+//   data: {
+//     steps: [
+//       {text: '步骤一', desc: '描述信息', inactiveIcon: 'location-o', activeIcon: 'success'},
+//       {text: '步骤二', desc: '描述信息', inactiveIcon: 'like-o', activeIcon: 'plus'},
+//       {text: '步骤三', desc: '描述信息', inactiveIcon: 'star-o', activeIcon: 'cross'},
+//       {text: '步骤四', desc: '描述信息', inactiveIcon: 'phone-o', activeIcon: 'fail'},
+//     ],
+//     active:2
+//   }
+// })
+
+// Page({
+//   data: {
+//     container: null,
+//   },
+//   onReady() {
+//     this.setData({
+//       container: () => {
+//         return wx.createSelectorQuery().select('#container');
+//       },
+//     });
+//   },
+// });
+
 Page({
-  start() {
-    const countDown = this.selectComponent(".control-count-down");
-    countDown.start()
+  data: {
+    scrollTop: 0,
+    offsetTop: 0,
   },
-  pause() {
-    const countDown = this.selectComponent('.control-count-down');
-    countDown.pause()
+
+  onScroll(event) {
+    wx.createSelectorQuery()
+      .select('#scroller')
+      .boundingClientRect((res) => {
+        this.setData({
+          scrollTop: event.detail.scrollTop,
+          offsetTop: res.top,
+        });
+      })
+      .exec();
   },
-  reset() {
-    const countDown = this.selectComponent('.control-count-down');
-    countDown.reset()
-  },
-  finished() {
-    Toast("倒计时结束")
-  }
-})
+});
