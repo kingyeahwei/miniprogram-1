@@ -1,9 +1,9 @@
 //index.js
 //获取应用实例
-// import Toast from '@vant/weapp/toast/toast';
+import Toast from '@vant/weapp/toast/toast';
 
-// import Dialog from '@vant/weapp/dialog/dialog';
-import Notify from '@vant/weapp/notify/notify'
+import Dialog from '@vant/weapp/dialog/dialog';
+import Notify from '@vant/weapp/notify/notify';
 const app = getApp();
 
 /* Page({
@@ -602,25 +602,238 @@ const app = getApp();
 //   }
 // })
 
-Page({
-  data: {},
-  btnClick() {
-    // Notify('通知内容')
-    // Notify({type: "primary", message: '通知内容'})
-    // Notify({type: "success", message: '通知内容'})
-    // Notify({type: "danger", message: '通知内容'})
-    // Notify({type: "warning", message: '通知内容'})
+// Page({
+//   data: {},
+//   btnClick() {
+//     // Notify('通知内容')
+//     // Notify({type: "primary", message: '通知内容'})
+//     // Notify({type: "success", message: '通知内容'})
+//     // Notify({type: "danger", message: '通知内容'})
+//     // Notify({type: "warning", message: '通知内容'})
 
-    // Notify({
-    //   message: '自定义颜色',
-    //   color: '#ad0000',
-    //   background: '#ffe1e1'
+//     // Notify({
+//     //   message: '自定义颜色',
+//     //   color: '#ad0000',
+//     //   background: '#ffe1e1'
+//     // })
+
+//     Notify({
+//       message: '自定义节点选择器',
+//       duration: 1000,
+//       selector: '#custom-selector'
+//     })
+//   }
+// })
+
+// Page({
+//   data: {
+//     show: false,
+//   },
+
+//   onClickShow() {
+//     this.setData({
+//       show: true,
+//     });
+//   },
+
+//   onClickHide() {
+//     this.setData({
+//       show: false,
+//     });
+//   },
+
+//   noop() {},
+// });
+
+// Page({
+//   data: {
+//     showShare: false,
+//     options: [
+//       // { name: '微信', icon: 'wechat', openType: 'share' },
+//       // { name: '微博', icon: 'weibo' },
+//       // { name: '复制链接', icon: 'link' },
+//       // { name: '分享海报', icon: 'poster' },
+//       // { name: '二维码', icon: 'qrcode' },
+//       // [
+//       //   { name: '微信', icon: 'wechat' },
+//       //   { name: '微博', icon: 'weibo' },
+//       //   { name: 'QQ', icon: 'qq' },
+//       // ],
+//       // [
+//       //   { name: '复制链接', icon: 'link' },
+//       //   { name: '分享海报', icon: 'poster' },
+//       //   { name: '二维码', icon: 'qrcode' },
+//       // ],
+//       // {name: '名称', icon: 'https://img.yzcdn.cn/vant/custom-icon-fire.png'},
+//       // {name: '名称', icon: 'https://img.yzcdn.cn/vant/custom-icon-light.png'},
+//       // {name: '名称', icon: 'https://img.yzcdn.cn/vant/custom-icon-water.png'},
+
+//       // { name: '微信', icon: 'wechat' },
+//       // { name: '微博', icon: 'weibo' },
+//       // { name: '复制链接', icon: 'link', description: '描述信息' },
+//       // { name: '分享海报', icon: 'poster' },
+//       // { name: '二维码', icon: 'qrcode' },
+//     ],
+//   },
+//   onClick(event) {
+//     this.setData({
+//       showShare: true,
+//     });
+//   },
+//   onClose() {
+//     this.setData({
+//       showShare: false,
+//     });
+//   },
+//   onSelect(event) {
+//     console.log(event.detail.name);
+//     this.onClose();
+//   },
+// });
+
+// Page({
+//   onClose(event) {
+//     console.log('1111');
+//     const { position, instance } = event.detail;
+//     switch (position) {
+//       case 'left':
+//       case 'cell':
+//         instance.close();
+//         break;
+//       case 'right':
+//         Dialog.confirm({
+//           message: '确认删除吗?',
+//         }).then(() => {
+//           instance.close();
+//         });
+//     }
+//   },
+// });
+
+// Page({
+//   onOpen(event) {
+//     const { position, name } = event.detail;
+//     switch (position) {
+//       case 'left':
+//         Notify({
+//           type: 'primary',
+//           message: `${name}${position}部分展示open事件被触发`,
+//         });
+//         break;
+//       case 'right':
+//         Notify({
+//           type: 'primary',
+//           message: `${name}${position}部分展示open事件被触发`,
+//         });
+//     }
+//   },
+// });
+
+// Page({
+  // onClick() {
+    // Toast("我是提示文案,建议不超过十五字~")
+    // Toast.loading({
+    //   message: '加载中...',
+    //   forbidClick: true,
+    //   loadingType: 'spinner'
     // })
+    // Toast.success("成功文案")
+    // Toast.fail('失败文案')
+    // const toast = Toast.loading({
+    //   duration: 0,
+    //   forbidClick: true,
+    //   message: '倒计时3秒',
+    //   selector: '#custom-selector',
+    // });
 
-    Notify({
-      message: '自定义节点选择器',
-      duration: 1000,
-      selector: '#custom-selector'
-    })
+    // let second = 3;
+    // const timer = setInterval(() => {
+    //   second--;
+    //   if (second) {
+    //     toast.setData({
+    //       message: `倒计时${second}秒`,
+    //     });
+    //   } else {
+    //     clearInterval(timer);
+    //     Toast.clear()
+    //   }
+    // }, 1000);
+
+  //   Toast({
+  //     type: 'success',
+  //     message: '提交成功',
+  //     onClose() {
+  //       console.log('执行回调函数');
+  //     }
+  //   })
+    
+  // },
+// });
+
+// Page({
+//   data: {
+//     gradientColor: {
+//       "0%": '#ffd01e',
+//       "100%": '#ee0a24'
+//     }
+//   }
+// })
+
+// Page({
+//   data: {
+//     value: 25,
+//     gradientColor: {
+//       0: '#ffd01e',
+//       100: '#ee0a24',
+//     },
+//   },
+// });
+
+// Page({
+//   data: {
+//     activeNames: ['1']
+//   },
+//   onChange(event) {
+//     console.log(event.detail);
+//     this.setData({
+//       activeNames: event.detail
+//     })
+//   },
+//   onOpen(event) {
+//     Toast(`展开: ${event.detail}`);
+//   },
+//   onClose(event) {
+//     Toast(`关闭: ${event.detail}`)
+//   }
+// })
+
+// Page({
+//   data: {
+//     time: 30 * 60 * 60 * 1000,
+//     timeData: {},
+//   },
+
+//   onChange(e) {
+//     this.setData({
+//       timeData: e.detail,
+//     });
+//   },
+// });
+
+Page({
+  start() {
+    const countDown = this.selectComponent(".control-count-down");
+    countDown.start()
+  },
+  pause() {
+    const countDown = this.selectComponent('.control-count-down');
+    countDown.pause()
+  },
+  reset() {
+    const countDown = this.selectComponent('.control-count-down');
+    countDown.reset()
+  },
+  finished() {
+    Toast("倒计时结束")
   }
 })

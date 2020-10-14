@@ -706,7 +706,189 @@
 
   <!-- <van-loading size="24px" vertical>加载中</van-loading> -->
 
-  <van-button bind:click="btnClick">点击</van-button>
+  <!-- <van-button bind:click="btnClick">点击</van-button> -->
   <!-- <van-notify id="van-notify"></van-notify> -->
-  <van-notify id="custom-selector"></van-notify>
+  <!-- <van-notify id="custom-selector"></van-notify> -->
+
+  <!-- <van-button type="primary" bind:click="onClickShow">显示遮罩层</van-button>
+  <van-overlay show="{{show}}" bind:click="onClickHide"></van-overlay> -->
+
+  <!-- <van-button type="primary" bind:click="onClickShow">嵌入内容</van-button>
+  <van-overlay show="{{show}}" bind:click="onClickHide">
+    <view class="wrapper">
+      <view class="block" catch:tap="noop"></view>
+    </view>
+  </van-overlay> -->
+  
+  <!-- <van-cell title="显示分享面板" bind:click="onClick"></van-cell>
+  <van-share-sheet 
+    show="{{showShare}}"
+    title="立即分享给好友"
+    options="{{options}}"
+    bind:select="onSelect"
+    bind:close="onClose"
+  ></van-share-sheet> -->
+
+  <!-- <vant-swipe-cell right-width="{{65}}" left-width="{{65}}">
+    <view slot="left" class="left">选择</view>
+    <van-cell-group>
+      <van-cell title="单元格" value="内容"></van-cell>
+    </van-cell-group>
+    <view slot="right" class="right">删除</view>
+  </vant-swipe-cell> -->
+
+  <!-- <vant-swipe-cell
+    id="swipe-cell"
+    right-width="{{65}}"
+    left-width="{{65}}"
+    async-close
+    bind:close="onClose">
+    <view slot="left" class="left">选择</view>
+    <van-cell-group>
+      <van-cell title="单元格" value="内容"></van-cell>
+    </van-cell-group>
+    <view slot="right" class="right">删除</view>
+  </vant-swipe-cell>
+  <van-dialog id="van-dialog"></van-dialog> -->
+
+  <!-- <vant-swipe-cell
+    id="swipe-cell2"
+    right-width="{{65}}"
+    left-width="{{65}}"
+    name="示例"
+    bind:open="onOpen">
+    <view slot="left" class="left">选择</view>
+    <van-cell-group>
+      <van-cell title="单元格" value="内容"></van-cell>
+    </van-cell-group>
+    <view slot="right" class="right">删除</view>
+  </vant-swipe-cell>
+
+  <van-notify id="van-notify"></van-notify> -->
+
+  <!-- <van-cell-group> -->
+    <!-- <van-cell title="文字提示" bind:click="onClick"></van-cell> -->
+    <!-- <van-cell title="加载提示" bind:click="onClick"></van-cell> -->
+    <!-- <van-cell title="成功提示" bind:click="onClick"></van-cell> -->
+    <!-- <van-cell title="失败提示" bind:click="onClick"></van-cell> -->
+    <!-- <van-cell title="动态更新提示" bind:click="onClick"></van-cell> -->
+    <!-- <van-cell title="回调函数" bind:click="onClick"></van-cell> -->
+  <!-- </van-cell-group> -->
+
+  <!-- <van-toast id="custom-selector"></van-toast> -->
+  <!-- <van-toast id="van-toast"></van-toast> -->
+
+  <!-- <van-circle value="{{30}}" text="text"></van-circle> -->
+
+  <!-- <van-circle value="{{30}}" stroke-width="{{6}}" text="宽度固定"></van-circle> -->
+
+  <!-- <van-circle value="{{30}}" layer-color="#eeeeee" color="#ee0a24">颜色定制</van-circle> -->
+
+  <!-- <van-circle vlaue="{{value}}" color="{{gradientColor}}" text="渐变色"></van-circle> -->
+
+  <!-- <van-circle value="{{ value }}" color="{{ gradientColor }}" text="渐变色" /> -->
+
+  <!-- <van-circle value="{{value}}" color="#07c160" clockwise="{{false}}" text="逆时针"></van-circle> -->
+
+  <!-- <van-circle value="{{value}}" size="200" text="大小定制"></van-circle> -->
+
+  <!-- <van-collapse 
+    value="{{activeNames}}"
+    bind:change="onChange">
+    <van-collapse-item name="1">
+      <view slot="title">有赞微商城<van-icon name="question-o"></van-icon></view>
+      提供多样店铺模板，快速搭建网上商城
+    </van-collapse-item>
+    <van-collapse-item title="有赞零售" name="2" icon="shop-o">
+      网店吸粉获客、会员分层营销、一机多种收款，告别经营低效和客户流失
+    </van-collapse-item>
+  </van-collapse>
+
+  <van-toast id="van-toast"></van-toast> -->
+
+  <!-- <van-count-down time="{{time}}" format="DD 天 HH 时 mm 分 ss秒"></van-count-down> -->
+
+  <!-- <van-count-down millisecond time="{{time}}" format="HH:mm:ss:SSS"></van-count-down> -->
+
+  <!-- <van-count-down use-slot time="{{ time }}" bind:change="onChange">
+    <text class="item">{{ timeData.hours }}</text>
+    <text class="item">{{ timeData.minutes }}</text>
+    <text class="item">{{ timeData.seconds }}</text>
+  </van-count-down> -->
+
+  <!-- <van-count-down
+    class="control-count-down"
+    millisecond
+    time="{{3000}}"
+    format="ss:SSS"
+    auto-start="{{false}}"
+    bind:finish="finished">
+  </van-count-down>
+  <van-grid clickable column-num="3">
+    <van-grid-item text="开始" icon="play-circle-o" bind:click="start"></van-grid-item>
+    <van-grid-item text="暂停" icon="pause-circle-o" bind:click="pause"></van-grid-item>
+    <van-grid-item text="重置" icon="replay" bind:click="reset"></van-grid-item>
+  </van-grid>
+
+  <van-toast id="van-toast"></van-toast> -->
+
+  <!-- <van-divider></van-divider>
+  <van-divider hairline></van-divider>
+  <van-divider dashed></van-divider>
+  <van-divider contentPosition="center">文本</van-divider>
+  <van-divider contentPosition="left">文本</van-divider>
+  <van-divider contentPosition="right">文本</van-divider>
+  <van-divider contentPosition="center" textColor="#1989fa">文本颜色</van-divider>
+  <van-divider contentPosition="center" borderColor="#1989fa">border颜色</van-divider>
+  <van-divider contentPosition="center" fontSize="18">字体大小</van-divider>
+  <van-divider
+  contentPosition="center"
+  customStyle="color: #1989fa; border-color: #1989fa; font-size: 18px;"
+>
+  文本
+</van-divider> -->
+
+  <!-- <van-empty description="描述文字"></van-empty> -->
+
+  <!-- <van-empty image="error" description="描述文字"></van-empty> -->
+
+  <!-- <van-empty image="network" description="描述文字"></van-empty> -->
+
+  <!-- <van-empty image="search" description="描述文字"></van-empty> -->
+
+  <!-- <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="描述文字"></van-empty> -->
+
+  <!-- <van-empty description="描述文字">
+  <van-button block round type="danger" class="bottom-button">
+    按钮
+  </van-button>
+</van-empty> -->
+
+<!-- <van-notice-bar left-icon="volume-o" text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"></van-notice-bar> -->
+
+<!-- <van-notice-bar scrollable="{{false}}" text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"></van-notice-bar> -->
+
+<!-- <van-notice-bar wrapable scrollable="{{false}}" text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"></van-notice-bar> -->
+
+<!-- <van-notice-bar mode="closeable" text="技术是开发它的人的共同灵魂。"></van-notice-bar> -->
+
+<!-- <van-notice-bar mode="link" text="技术是开发它的人的共同灵魂。"></van-notice-bar> -->
+
+<!-- <van-notice-bar color="#1989fa" background="#ecf9ff" left-icon="info-o" text="技术是开发它的人的共同灵魂。"></van-notice-bar> -->
+
+<!-- <van-notice-bar text="技术是开发它的人的共同灵魂。技术是开发它的人的共同灵魂。技术是开发它的人的共同灵魂。" speed="{{100}}" left-icon="//img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png"></van-notice-bar> -->
+
+<!-- <van-panel title="标题" desc="描述信息" status="状态">
+  <view>内容</view>
+</van-panel> -->
+
+<!-- <van-panel title="标题" desc="描述信息" status="状态" use-footer-slot>
+  <view>内容</view>
+  <view slot="footer">
+    <van-button size="small" customStyle="float: right">按钮</van-button>
+    <van-button size="small" type="danger" customStyle="float: right">按钮</van-button>
+    <view style="clear: both"></view>
+  </view>
+</van-panel> -->
+
 </view>
