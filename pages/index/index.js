@@ -874,21 +874,163 @@ const app = getApp();
 //   },
 // });
 
+// Page({
+//   data: {
+//     scrollTop: 0,
+//     offsetTop: 0,
+//   },
+
+//   onScroll(event) {
+//     wx.createSelectorQuery()
+//       .select('#scroller')
+//       .boundingClientRect((res) => {
+//         this.setData({
+//           scrollTop: event.detail.scrollTop,
+//           offsetTop: res.top,
+//         });
+//       })
+//       .exec();
+//   },
+// });
+
+// Page({
+//   data: {
+//     show: {
+//       primary: true,
+//       success: true,
+//     },
+//   },
+//   onClose(event) {
+//     console.log(event);
+//     this.setData({
+//       [`show.${event.target.id}`]: false,
+//     });
+//   },
+// });
+
+// Page({
+//   data: {
+//     mainActiveIndex: 0,
+//     activeId: [],
+//     items: [
+//       {
+//         text: '浙江',
+//         children: [
+//           {
+//             text: '杭州',
+//             id: 1,
+//           },
+//           {
+//             text: '温州',
+//             id: 2,
+//           },
+//           {
+//             text: '宁波',
+//             id: 3,
+//             disabled: true,
+//           },
+//           {
+//             text: '义乌',
+//             id: 4,
+//           },
+//         ],
+//       },
+//       {
+//         text: '江苏',
+//         children: [
+//           {
+//             text: '南京',
+//             id: 5,
+//           },
+//           {
+//             text: '无锡',
+//             id: 6,
+//           },
+//           {
+//             text: '徐州',
+//             id: 7,
+//           },
+//           {
+//             text: '苏州',
+//             id: 8,
+//           },
+//         ],
+//       },
+//       {
+//         text: '福建',
+//         disabled: true,
+//       },
+//     ],
+//     max: 2,
+//   },
+
+//   onClickNav({ detail = {} }) {
+//     this.setData({
+//       mainActiveIndex: detail.index || 0,
+//     });
+//   },
+
+//   onClickItem({ detail = {} }) {
+//     // console.log(detail.id);
+//     // const activeId = this.data.activeId === detail.id ? null : detail.id;
+
+//     // this.setData({ activeId });
+
+//     const {activeId} = this.data;
+
+//     const index = activeId.indexOf(detail.id)
+
+//     if (index > -1) {
+//       activeId.splice(index, 1)
+//     } else {
+//       activeId.push(detail.id)
+//     }
+
+//     this.setData({
+//       activeId
+//     })
+
+//   },
+// });
+
+// Page({
+//   data: {
+//     indexList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//   }
+// })
+
+// Page({
+//   data: {
+//     activeKey: 0,
+//   },
+//   onChange(event) {
+//     Notify({type: 'primary', message: event.detail})
+//   }
+// });
+
+// Page({
+//   onClickLeft() {
+//     wx.showToast({
+//       title: '点击返回',
+//       icon: 'none'
+//     })
+//   },
+//   onClickRight() {
+//     wx.showToast({
+//       title: '点击按钮',
+//       icon: 'none'
+//     })
+//   }
+// })
+
 Page({
   data: {
-    scrollTop: 0,
-    offsetTop: 0,
+    active: 0,
   },
-
-  onScroll(event) {
-    wx.createSelectorQuery()
-      .select('#scroller')
-      .boundingClientRect((res) => {
-        this.setData({
-          scrollTop: event.detail.scrollTop,
-          offsetTop: res.top,
-        });
-      })
-      .exec();
-  },
-});
+  onClickDisabled(event) {
+    wx.showToast({
+      title: `标签${event.detail.name}已被禁用`,
+      icon: 'none'
+    })
+  }
+})

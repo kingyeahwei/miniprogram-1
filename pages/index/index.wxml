@@ -931,7 +931,7 @@
     <view style="height: 400px;"></view>
   </view> -->
 
-  <scroll-view bind:scroll="onScroll" scroll-y id="scroller" style="height: 200px">
+  <!-- <scroll-view bind:scroll="onScroll" scroll-y id="scroller" style="height: 200px">
     <view style="height: 400px; padding-top: 50px">
       <van-sticky scroll-top="{{scrollTop}}" offset-top="{{offsetTop}}">
         <van-button type="warning">
@@ -939,6 +939,244 @@
         </van-button>
       </van-sticky>
     </view>
-  </scroll-view>
+  </scroll-view> -->
   
+  <!-- <van-tag type="primary">标签</van-tag>
+  <van-tag type="success">标签</van-tag>
+  <van-tag type="danger">标签</van-tag>
+  <van-tag type="warning">标签</van-tag>
+
+  <van-tag plain type="primary">标签</van-tag>
+  <van-tag plain type="success">标签</van-tag>
+  <van-tag plain type="danger">标签</van-tag>
+  <van-tag plain type="warning">标签</van-tag>
+
+  <van-tag round type="primary">标签</van-tag>
+  <van-tag round type="success">标签</van-tag>
+  <van-tag round type="danger">标签</van-tag>
+  <van-tag round type="warning">标签</van-tag>
+
+  <van-tag mark type="primary">标签</van-tag>
+  <van-tag mark type="success">标签</van-tag>
+  <van-tag mark type="danger">标签</van-tag>
+  <van-tag mark type="warning">标签</van-tag>
+
+  <van-tag color="#f2826a">标签</van-tag>
+  <van-tag color="#7232dd">标签</van-tag>
+  <van-tag color="#7232dd" plain>标签</van-tag>
+  <van-tag color="#ffe1e1" text-color="#ad0000">标签</van-tag>
+
+  <van-tag type="danger">标签</van-tag>
+  <van-tag type="danger" size="medium">标签</van-tag>
+  <van-tag type="danger" size="large">标签</van-tag>
+
+  <van-tag
+    wx:if="{{ show.primary }}"
+    closeable
+    size="medium"
+    type="primary"
+    id="primary"
+    bind:close="onClose"
+  >标签</van-tag>
+  <van-tag
+    wx:if="{{ show.success }}"
+    closeable
+    size="medium"
+    type="success"
+    id="success"
+    bind:close="onClose"
+  >标签</van-tag> -->
+
+  <!-- <van-tree-select
+    items="{{ items }}"
+    main-active-index="{{ mainActiveIndex }}"
+    active-id="{{ activeId }}"
+    bind:click-nav="onClickNav"
+    bind:click-item="onClickItem"
+  /> -->
+
+  <!-- <van-tree-select
+    items="{{items}}"
+    main-active-index="{{mainActiveIndex}}"
+    active-id="{{activeId}}"
+    max="{{max}}"
+    bind:click-nav="onClickNav"
+    bind:click-item="onClickItem"
+  ></van-tree-select> -->
+
+  <!-- <van-tree-select
+    items="{{items}}"
+    height="55vw"
+    main-active-index="{{mainActiveIndex}}"
+    active-id="{{activeId}}"
+    bind:click-nav="onClickNav"
+    bind:click-item="onClickItem">
+    <image src="https://img.yzcdn.cn/vant/apple-1.jpg" slot="content" />
+  </van-tree-select> -->
+
+  <!-- <van-grid>
+    <van-grid-item icon="photo-o" text="文字"></van-grid-item>
+    <van-grid-item icon="photo-o" text="文字"></van-grid-item>
+    <van-grid-item icon="photo-o" text="文字"></van-grid-item>
+    <van-grid-item icon="photo-o" text="文字"></van-grid-item>
+  </van-grid> -->
+
+  <!-- <van-grid column-num="3">
+    <van-grid-item icon="photo-o" text="文字" wx:for="{{6}}"></van-grid-item>
+  </van-grid> -->
+
+  <!-- <van-grid column-num="3" border="{{false}}">
+    <van-grid-item use-slot wx:for="{{3}}" wx:for-item="index">
+      <image style="width: 100%; height: 90px;" src="https://img.yzcdn.cn/vant/apple-{{ index + 1 }}.jpg"></image>
+    </van-grid-item>
+  </van-grid> -->
+
+  <!-- <van-grid square>
+    <van-grid-item icon="photo-o" text="文字" wx:for="{{8}}"></van-grid-item>
+  </van-grid> -->
+
+  <!-- <van-grid gutter="{{10}}" square>
+    <van-grid-item icon="photo-o" text="文字" wx:for="{{8}}"></van-grid-item>
+  </van-grid> -->
+
+  <!-- <van-grid direction="horizontal" column-num="2">
+    <van-grid-item icon="photo-o" text="文字"></van-grid-item>
+    <van-grid-item icon="photo-o" text="文字"></van-grid-item>
+    <van-grid-item icon="photo-o" text="文字"></van-grid-item>
+  </van-grid> -->
+  
+  <!-- <van-grid clickable column-num="2">
+    <van-grid-item
+      icon="home-o"
+      link-type="navigateTo"
+      url="/pages/dashboard/index"
+      text="Navigate 跳转"
+    ></van-grid-item>
+    <van-grid-item
+      icon="search"
+      link-type="reLaunch"
+      url="/pages/dashboard/index"
+      text="ReLaunch 跳转"
+    ></van-grid-item>
+  </van-grid> -->
+
+  <!-- <van-grid column-num="2">
+    <van-grid-item icon="home-o" text="文字" dot></van-grid-item>
+    <van-grid-item icon="search" text="文字" badge="99+"></van-grid-item>
+  </van-grid> -->
+
+  <!-- <van-index-bar>
+    <view>
+      <van-index-anchor index="A"></van-index-anchor>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+    </view>
+    <view>
+      <van-index-anchor index="B"></van-index-anchor>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+    </view>
+    <view>
+      <van-index-anchor index="C"></van-index-anchor>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+    </view>
+    <view>
+      <van-index-anchor index="D"></van-index-anchor>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+    </view>
+    <view>
+      <van-index-anchor index="E"></van-index-anchor>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+    </view>
+    <view>
+      <van-index-anchor index="F"></van-index-anchor>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+      <van-cell title="文本"></van-cell>
+    </view>
+  </van-index-bar> -->
+
+  <!-- <van-index-bar index-list="{{indexList}}">
+    <view>
+      <van-index-anchor index="1">标题1</van-index-anchor>
+      <van-cell>文本</van-cell>
+      <van-cell>文本</van-cell>
+      <van-cell>文本</van-cell>
+    </view>
+    <view>
+      <van-index-anchor index="2">标题2</van-index-anchor>
+      <van-cell>文本</van-cell>
+      <van-cell>文本</van-cell>
+      <van-cell>文本</van-cell>
+    </view>
+  </van-index-bar> -->
+
+  <!-- <van-sidebar active-key="{{activeKey}}">
+    <van-sidebar-item title="标签页"></van-sidebar-item>
+    <van-sidebar-item title="标签页"></van-sidebar-item>
+    <van-sidebar-item title="标签页"></van-sidebar-item>
+  </van-sidebar> -->
+
+  <!-- <van-sidebar active-key="{{activeKey}}">
+    <van-sidebar-item title="标签名" dot></van-sidebar-item>
+    <van-sidebar-item title="标签名" badge="5"></van-sidebar-item>
+    <van-sidebar-item title="标签名" badge="99+"></van-sidebar-item>
+  </van-sidebar> -->
+
+  <!-- <van-sidebar active-key="{{activeKey}}">
+    <van-sidebar-item title="标签名"></van-sidebar-item>
+    <van-sidebar-item title="标签名" disabled></van-sidebar-item>
+    <van-sidebar-item title="标签名"></van-sidebar-item>
+  </van-sidebar> -->
+
+  <!-- <van-sidebar active-key="{{activeKey}}" bind:change="onChange">
+    <van-sidebar-item title="标签名1"></van-sidebar-item>
+    <van-sidebar-item title="标签名2"></van-sidebar-item>
+    <van-sidebar-item title="标签名3"></van-sidebar-item>
+  </van-sidebar>
+
+  <van-notify id="van-notify"></van-notify> -->
+
+  <!-- <van-nav-bar title="标题" left-text="返回" right-text="按钮" left-arrow bind:click-left="onClickLeft" bind:click-right="onClickRight"></van-nav-bar> -->
+
+  <!-- <van-nav-bar title="标题" left-text="返回" left-arrow>
+    <van-icon name="search" slot="right"></van-icon>
+  </van-nav-bar> -->
+
+  <!-- <van-tabs active="{{active}}" bind:change="onChange">
+    <van-tab title="标签1">内容1</van-tab>
+    <van-tab title="标签2">内容2</van-tab>
+    <van-tab title="标签3">内容3</van-tab>
+    <van-tab title="标签4">内容4</van-tab>
+  </van-tabs> -->
+
+  <!-- <van-tabs active="a">
+    <van-tab title="标签1" name="a">内容1</van-tab>
+    <van-tab title="标签2" name="b">内容2</van-tab>
+    <van-tab title="标签3" name="c">内容3</van-tab>
+  </van-tabs> -->
+
+  <!-- <van-tabs active="{{active}}">
+    <van-tab title="标签1">内容1</van-tab>
+    <van-tab title="标签2">内容2</van-tab>
+    <van-tab title="标签3">内容3</van-tab>
+    <van-tab title="标签4">内容4</van-tab>
+    <van-tab title="标签5">内容5</van-tab>
+    <van-tab title="标签6">内容6</van-tab>
+  </van-tabs> -->
+  
+  <van-tabs bind:disabled="onClickDisabled">
+    <van-tab title="标签1">内容1</van-tab>
+    <van-tab title="标签2" disabled>内容2</van-tab>
+    <van-tab title="标签3">内容3</van-tab>
+  </van-tabs>
+
 </view>
