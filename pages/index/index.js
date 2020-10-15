@@ -1023,14 +1023,93 @@ const app = getApp();
 //   }
 // })
 
+// Page({
+//   data: {
+//     active: 0,
+//   },
+//   onClickDisabled(event) {
+//     wx.showToast({
+//       title: `标签${event.detail.name}已被禁用`,
+//       icon: 'none'
+//     })
+//   }
+// })
+
+// Page({
+//   data: {
+//     active: 0,
+//     icon: {
+//       normal: 'https://img.yzcdn.cn/vant/user-inactive.png',
+//       active: 'https://img.yzcdn.cn/vant/user-active.png',
+//     },
+//   },
+//   // onChange(event) {
+//   //   this.setData({
+//   //     active: event.detail,
+//   //   });
+//   // },
+//   onChange(event) {
+//     wx.showToast({
+//       title: `点击标签${event.detail + 1}`,
+//       icon: 'none',
+//     });
+//   },
+// });
+
+// Page({
+//   data: {
+//     active: 0,
+//   },
+//   onChange(event) {
+//     wx.showToast({
+//       title: `点击标签 ${event.detail + 1}`,
+//       icon: 'none',
+//     });
+//   },
+// });
+
+// Page({
+//   data: {
+//     areaList: {
+//       province_list: {
+//         110000: '北京市',
+//         120000: '天津市'
+//       },
+//       city_list: {
+//         110100: '北京市',
+//         110200: '县',
+//         120100: '天津市',
+//         120200: '县'
+//       },
+//       county_list: {
+//         110101: '东城区',
+//         110102: '西城区',
+//         110105: '朝阳区',
+//         110106: '丰台区',
+//         120101: '和平区',
+//         120102: '河东区',
+//         120103: '河西区',
+//         120104: '南开区',
+//         120105: '河北区',
+//       }
+//     }
+//   }
+// })
+
+// Page({
+//   data: {
+//     imageURL: 'https://img.yzcdn.cn/vant/ipad.jpeg'
+//   },
+//   onSubmit() {
+//     console.log('提交');
+//   }
+// })
+
 Page({
-  data: {
-    active: 0,
+  onClickIcon() {
+    console.log('点击图标');
   },
-  onClickDisabled(event) {
-    wx.showToast({
-      title: `标签${event.detail.name}已被禁用`,
-      icon: 'none'
-    })
+  onClickButton() {
+    console.log('点击按钮');
   }
 })

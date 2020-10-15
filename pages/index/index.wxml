@@ -1173,10 +1173,144 @@
     <van-tab title="标签6">内容6</van-tab>
   </van-tabs> -->
   
-  <van-tabs bind:disabled="onClickDisabled">
+  <!-- <van-tabs bind:disabled="onClickDisabled">
     <van-tab title="标签1">内容1</van-tab>
     <van-tab title="标签2" disabled>内容2</van-tab>
     <van-tab title="标签3">内容3</van-tab>
+  </van-tabs> -->
+
+  <!-- <van-tabs type="card">
+    <van-tab title="标签1">内容1</van-tab>
+    <van-tab title="标签2">内容2</van-tab>
+    <van-tab title="标签3">内容3</van-tab>
+  </van-tabs> -->
+
+  <!-- <van-tabs sticky>
+    <van-tab title="标签 1">内容 1</van-tab>
+    <van-tab title="标签 2">内容 2</van-tab>
+    <van-tab title="标签 3">内容 3</van-tab>
+    <van-tab title="标签 4">内容 4</van-tab>
   </van-tabs>
+  <view style="height: 1000px"></view> -->
+
+  <!-- <van-tabs animated>
+    <van-tab title="标签1">内容1</van-tab>
+    <van-tab title="标签2">内容2</van-tab>
+    <van-tab title="标签3">内容3</van-tab>
+    <van-tab title="标签4">内容4</van-tab>
+  </van-tabs> -->
+
+  <!-- <van-button bind:click="onClick">点击</van-button>
+
+  <van-popup show="{{show}}">
+    <van-tabs wx:if="{{show}}">
+      <van-tab title="标签 1">内容 1</van-tab>
+      <van-tab title="标签 2">内容 2</van-tab>
+      <van-tab title="标签 3">内容 3</van-tab>
+      <van-tab title="标签 4">内容 4</van-tab>
+    </van-tabs>
+  </van-popup> -->
+  
+  <!-- <van-tabbar active="{{active}}" bind:change="onChange">
+    <van-tabbar-item icon="home-o">标签</van-tabbar-item>
+    <van-tabbar-item icon="search" dot>标签</van-tabbar-item>
+    <van-tabbar-item icon="friends-o" info="5">标签</van-tabbar-item>
+    <van-tabbar-item icon="setting-o" info="20">标签</van-tabbar-item>
+  </van-tabbar> -->
+
+  <!-- <van-tabbar active="{{active}}" bind:change="onChange">
+    <van-tabbar-item info="3">
+      <image 
+      slot="icon"
+      src="{{icon.normal}}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px"
+      ></image>
+      <image slot="icon-active" src="{{icon.active}}" mode="aspectFit" style="width: 30px; height: 18px;" />
+      自定义
+    </van-tabbar-item>
+    <van-tabbar-item icon="search">标签</van-tabbar-item>
+    <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+  </van-tabbar> -->
+
+  <!-- <van-tabbar active="{{ active }}" bind:change="onChange">
+    <van-tabbar-item icon="home-o">标签1</van-tabbar-item>
+    <van-tabbar-item icon="search">标签2</van-tabbar-item>
+    <van-tabbar-item icon="friends-o">标签3</van-tabbar-item>
+    <van-tabbar-item icon="setting-o">标签4</van-tabbar-item>
+  </van-tabbar> -->
+
+  <!-- <van-area area-list="{{areaList}}" value="110101" columns-num="{{2}}" title="标题" columns-placeholder="{{['请选择', '请选择', '请选择']}}"></van-area> -->
+
+  <!-- <van-card
+    num="2"
+    price="2.00"
+    desc="描述信息"
+    title="商品标题"
+    thumb="{{imageURL}}"
+  ></van-card> -->
+  
+  <!-- <van-card 
+    tag="标签"
+    price="10.00"
+    desc="描述信息"
+    title="商品标题"
+    thumb="{{imageURL}}"
+    num="2">
+    <view slot="footer">
+      <van-button size="mini">按钮</van-button>
+      <van-button size="mini">按钮</van-button>
+    </view>
+  </van-card> -->
+
+  <!-- <van-submit-bar price="{{3050}}" button-text="提交订单" bind:submit="onSubmit"></van-submit-bar> -->
+
+  <!-- <van-submit-bar 
+  disabled 
+  price="{{3050}}" 
+  tip="您的收货地址不支持同城送, 我们已为您推荐快递"
+  tip-icon="https://img.yzcdn.cn/1.png"
+  bind:submit="onSubmit"
+  button-text="提交订单"></van-submit-bar> -->
+
+  <!-- <van-submit-bar
+    loading
+    price="{{3050}}"
+    button-text="提交订单"
+    bind:submit="onSubmit"
+  ></van-submit-bar> -->
+
+  <!-- <van-submit-bar
+    price="{{3050}}"
+    button-text="提交订单"
+    bind:submit="onClickButton"
+    tip="{{true}}">
+    <van-tag type="primary">标签</van-tag>
+    <view slot="tip">您的收货地址不支持同城送, <text>修改地址</text></view>
+  </van-submit-bar> -->
+
+  <!-- <van-goods-action>
+    <van-goods-action-icon icon="chat-o" text="客服" bind:click="onClickIcon"></van-goods-action-icon>
+    <van-goods-action-icon icon="cart-o" text="购物车" bind:click="onClickIcon"></van-goods-action-icon>
+    <van-goods-action-button text="加入购物车" type="warning" bind:click="onClickButton"></van-goods-action-button>
+    <van-goods-action-button text="立即购买" bind:click="onClickButton"></van-goods-action-button>
+  </van-goods-action> -->
+  
+  <!-- <van-goods-action>
+    <van-goods-action-icon icon="chat-o" text="客服" dot></van-goods-action-icon>
+    <van-goods-action-icon icon="cart-o" text="购物车" info="5"></van-goods-action-icon>
+    <van-goods-action-icon icon="shop-o" text="店铺"></van-goods-action-icon>
+
+    <van-goods-action-button text="加入购物车" type="warning"></van-goods-action-button>
+    <van-goods-action-button text="立即购买"></van-goods-action-button>
+  </van-goods-action> -->
+
+  <van-goods-action>
+    <van-goods-action-icon icon="chat-o" text="客服"></van-goods-action-icon>
+    <van-goods-action-icon icon="cart-o" text="购物车"></van-goods-action-icon>
+    <van-goods-action-icon icon="shop-o" text="店铺"></van-goods-action-icon>
+    <van-goods-action-button color="#7232dd" text="加入购物车"></van-goods-action-button>
+    <van-goods-action-button plain color="#7232dd" text="立即购买"></van-goods-action-button>
+  </van-goods-action>
 
 </view>
